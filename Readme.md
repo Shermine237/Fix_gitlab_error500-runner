@@ -14,18 +14,18 @@
 <code>DELETE FROM ci_variables;</code>
     
 ### b. Reset runner registration tokens
--- Clear project tokens<br/>
+<p>-- Clear project tokens</p>
 <code>UPDATE projects SET runners_token = null, runners_token_encrypted = null;</code>
--- Clear group tokens<br/>
+<p>-- Clear group tokens</p>
 <code>UPDATE namespaces SET runners_token = null, runners_token_encrypted = null;</code>
--- Clear instance tokens<br/>
+<p>-- Clear instance tokens</p>
 <code>UPDATE application_settings SET runners_registration_token_encrypted = null;</code><br/>
 <code>UPDATE application_settings SET encrypted_ci_jwt_signing_key = null;</code>
--- Clear runner tokens<br/>
+<p>-- Clear runner tokens</p>
 <code>UPDATE ci_runners SET token = null, token_encrypted = null;</code>
     
 ### c. Fix project integrations
--- truncate web_hooks table<br/>
+<p>-- truncate web_hooks table</p>
 <code>TRUNCATE web_hooks CASCADE;</code>
 
 ### d. Reset setting
