@@ -37,5 +37,5 @@
 ### e. Quit rails console
 <code>\q</code>
 
-##4- Restart Gitlab
+## 4- Restart Gitlab
 <code>gitlab-ctl restart</code>
