@@ -39,3 +39,12 @@
 
 ## 4- Restart Gitlab
 <code>gitlab-ctl restart</code>
+
+# Method 2 if still failed
+## Fix
+<code>gitlab-rails console</code>
+<code>ApplicationSetting.first.delete</code>
+<code>ApplicationSetting.first</code>
+<code>exit</code>
+## 4- Restart Gitlab
+<code>gitlab-ctl restart</code>
