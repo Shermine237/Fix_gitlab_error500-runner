@@ -78,7 +78,7 @@ ApplicationSetting.first.delete
 ApplicationSetting.first
 exit
 ```
-### 4- Restart Gitlab
+### Restart Gitlab
 ```shell
 gitlab-ctl restart
 ```
